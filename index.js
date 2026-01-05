@@ -24,6 +24,6 @@ console.log("\nBUSCAR Id 6:");
 console.log(findCategoryById(categories, 6));
 
 
-console.log("\n=== RUTA DEL ID 6 ===");
+console.log("\nRUTA DEL ID 6 o buscar con id");
 console.log(findCategoryPathById(categories, 6));
 
