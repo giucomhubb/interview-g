@@ -5,10 +5,9 @@ Espacio: O(H)
 donde H es la profundidad del árbol
 
 Este proyecto incluye tests automatizados usando Jest.
-Para ejecutar:
+Comandos:
 npm install
 npm test
 
-
-Para jecutar:
+Comandos para correr la prueba:
 node index.js
