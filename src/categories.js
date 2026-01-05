@@ -46,4 +46,27 @@ function findCategoryById(root, targetId) {
   return null;
 }
 
-module.exports = { getCategoryPaths, findCategoryById };
+function findCategoryPathById(root, targetId) {
+  let result = null;
+
+  function dfs(node, stack) {
+    if (!node || result) return;
+
+    const nextStack = [...stack, node.name];
+
+    if (node.id === targetId) {
+      result = nextStack.join("/");
+      return;
+    }
+
+    for (const child of node.subcategories || []) {
+      dfs(child, nextStack);
+    }
+  }
+
+  dfs(root, []);
+  return result;
+}
+
+
+module.exports = { getCategoryPaths, findCategoryById, findCategoryPathById };

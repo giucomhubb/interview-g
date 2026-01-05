@@ -1,4 +1,4 @@
-const { getCategoryPaths, findCategoryById } = require("./src/categories");
+const { getCategoryPaths, findCategoryById, findCategoryPathById} = require("./src/categories");
 
 const categories = {
   id: 1,
@@ -22,4 +22,8 @@ console.log(getCategoryPaths(categories));
 
 console.log("\nBUSCAR Id 6:");
 console.log(findCategoryById(categories, 6));
+
+
+console.log("\n=== RUTA DEL ID 6 ===");
+console.log(findCategoryPathById(categories, 6));
 
