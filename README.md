@@ -5,6 +5,7 @@ Espacio: O(H)
 donde H es la profundidad del árbol
 
 Este proyecto incluye tests automatizados usando Jest.
+Para ejecutar:
 npm install
 npm test
 
